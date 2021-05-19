@@ -98,7 +98,7 @@ router.get("/profile", isAuthenticated, (req, res) => {
   console.log(req.headers);
 
   try {
-    // Buscar o usuário logado que está disponível através do middleware attachCurrentUser
+    
     const loggedInUser = req.currentUser;
 
     if (loggedInUser) {
